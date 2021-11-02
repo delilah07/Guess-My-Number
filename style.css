@@ -94,6 +94,11 @@ body.lose .number {
   top: 2rem;
   left: 2rem;
 }
+.new-level {
+  position: absolute;
+  top: 2rem;
+  left: 25rem;
+}
 
 .guess {
   background: none;
@@ -129,4 +134,24 @@ body.lose .number {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+.popup {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.popup__wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.popup__wrapper .btn + .btn {
+  margin-top: 5%;
 }
