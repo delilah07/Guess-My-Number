@@ -21,7 +21,6 @@ levelBtns.forEach(levelBtn =>
     popup.style.display = 'none';
     maxNum = levelBtn.dataset.max;
     displayText(maxNumDiv, maxNum);
-    console.log(maxNum);
     secretNumber = randomNum(maxNum);
     return maxNum;
   })
@@ -29,7 +28,6 @@ levelBtns.forEach(levelBtn =>
 
 function randomNum(max) {
   let num = Math.trunc(Math.random() * max) + 1;
-  console.log(num);
   return num;
 }
 const minScore = function () {
